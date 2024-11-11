@@ -1,0 +1,53 @@
+body {
+    display: flex;
+    justify-content: center;
+    background-color: #ffe9eb;
+}
+
+#img {
+    width: 700px;
+}
+
+#button {
+    position: absolute;
+    top: 150px;
+    background: none;
+    border: none;
+    cursor: pointer;
+    outline: none;
+}
+
+.shake {
+    animation: shaking 0.50s infinite;
+}
+
+@keyframes shaking {
+    0% {
+        transform: translate(0, 0) rotate(0deg);
+    }
+    25% {
+        transform: translate(5px, 5px) rotate(5deg);
+    }
+    50% {
+        transform: translate(0, 0) rotate(0deg);
+    }
+    75% {
+        transform: translate(-5px, 5px) rotate(-5deg);
+    }
+    100% {
+        transform: translate(0, 0) rotate(0deg);
+    }
+}
+
+.info {
+    margin-top: 50px;
+    text-align: center;
+    font-size: 30px;
+    color: #ab3f51;
+    font-weight: bold;
+    font-family: "Jura", sans-serif;
+}
+
+#age {
+    margin-top: -90px;
+}
